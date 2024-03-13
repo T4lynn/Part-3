@@ -21,7 +21,10 @@ public class Thief : Villager
     }
     void dash()
     {
-       Vector2 dashdist = destination.normalized * 20;
-
+        Vector2 direction =  destination - rb.position;
+       Vector2 dashdist = direction.normalized * 2;
+       rb.position = rb.position + dashdist;
+        destination = rb.position;
+        Debug.Log("dashed");
     }
 }
