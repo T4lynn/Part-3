@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class CharacterControl : MonoBehaviour
 {
     public TMP_Text charactertext;
-    public static string name1 = "none";
+    public static CharacterControl Instance;
     public static Villager SelectedVillager { get; private set; }
     public static void SetSelectedVillager(Villager villager)
     {
@@ -18,15 +18,11 @@ public class CharacterControl : MonoBehaviour
         }
         SelectedVillager = villager;
         SelectedVillager.Selected(true);
-        name1 = villager.name;
+        Instance.charactertext.text = villager.ToString();
     }
     private void Start()
     {
 
-        name1 = "None";
-    }
-    private void Update()
-    {
-        charactertext.text = name1;
+        Instance = this; 
     }
 }
