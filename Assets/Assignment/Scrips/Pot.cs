@@ -33,6 +33,7 @@ public class Pot : MonoBehaviour
         switch (StateTracker.pot1states)
         {
             case 0:
+                sr.sprite = sprites[0];
                 break;
             case 1:
                 if (previouscase == 0)
@@ -55,19 +56,25 @@ public class Pot : MonoBehaviour
                 {
                     Debug.Log("watered");
                     sr.sprite = sprites[2];
-                    StateTracker.pot1states = 4;
                     previouscase = 3;
-                }
-                break;
-            case 4:
-                if (previouscase == 3)
-                {
-                    Debug.Log("growing");
-                    sr.sprite = sprites[4];
-                    previouscase = 4;
+                    StartCoroutine("growplants");
                 }
                 break;
         }
+    }
+
+    IEnumerator growplants()
+    {
+        Debug.Log("coroutine started");
+        yield return new WaitForSeconds(2);
+        sr.sprite = sprites[4];
+        yield return new WaitForSeconds(5);
+        StateTracker.pot1states = 0;
+        StateTracker.pot2states = 0;
+        StateTracker.pot3states = 0;
+        Debug.Log("reset potstates");
+        sr.sprite = sprites[0];
+        previouscase = 0;
     }
 
 }
