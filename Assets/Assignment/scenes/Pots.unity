@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 554567272}
   - component: {fileID: 554567271}
   - component: {fileID: 554567273}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: pot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -830,7 +830,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.031946182, y: -0.67087007}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -841,7 +841,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.1628413, y: 1.728373}
   m_EdgeRadius: 0
 --- !u!114 &554567273
 MonoBehaviour:
@@ -858,7 +858,12 @@ MonoBehaviour:
   rb: {fileID: 554567271}
   bc: {fileID: 554567272}
   sr: {fileID: 554567268}
-  sprites: []
+  sprites:
+  - {fileID: 21300000, guid: 7f1f36d496b419c4982533e20c0beaaf, type: 3}
+  - {fileID: 21300000, guid: ecbce10c1299dd34db2991437081881e, type: 3}
+  - {fileID: 21300000, guid: 401e99a3f5d74804e8de0d47594ff4ec, type: 3}
+  - {fileID: 21300000, guid: b841fd6c459db1645a7281d3342d0c96, type: 3}
+  - {fileID: 21300000, guid: d972d6b9adcf0e2479f226251ca6a000, type: 3}
 --- !u!1 &1054432567
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1004,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -6.8}
+  m_AnchoredPosition: {x: 171.4, y: -6.8067}
   m_SizeDelta: {x: 160, y: 79.1908}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1060722222
@@ -1053,7 +1058,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1266,7 +1271,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 170, y: -6.8045044}
+  m_AnchoredPosition: {x: 0, y: -6.8025055}
   m_SizeDelta: {x: 160, y: 79.19101}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1285284578
@@ -1320,7 +1325,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1482,7 +1487,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.14695251, y: -0.33224037}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1493,7 +1498,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.293905, y: 2.2778478}
   m_EdgeRadius: 0
 --- !u!50 &1476612737
 Rigidbody2D:
@@ -1540,8 +1545,8 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 6c48919491a19da49b3b1f01ced2e209, type: 3}
   - {fileID: 21300000, guid: 07af11f65115aa943a4d88cb4b0676ae, type: 3}
-  - {fileID: 21300000, guid: 5202a1c08bfe4b345a0f8a00eb58ed8f, type: 3}
   - {fileID: 21300000, guid: 5c5d84ecfdc052b4fb8357b635654aa8, type: 3}
+  - {fileID: 21300000, guid: 5202a1c08bfe4b345a0f8a00eb58ed8f, type: 3}
   - {fileID: 21300000, guid: ca4d43cc38089714295be972e27fd92e, type: 3}
 --- !u!1 &2052524376
 GameObject:
@@ -1666,7 +1671,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.063892365, y: -0.4600252}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1677,7 +1682,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.9967213, y: 2.0733922}
   m_EdgeRadius: 0
 --- !u!212 &2055876612
 SpriteRenderer:
@@ -1761,7 +1766,12 @@ MonoBehaviour:
   rb: {fileID: 2055876610}
   bc: {fileID: 2055876611}
   sr: {fileID: 2055876612}
-  sprites: []
+  sprites:
+  - {fileID: 21300000, guid: 19482761cd7c7dc41ad2964e39179686, type: 3}
+  - {fileID: 21300000, guid: 4a5ebbd6caa5d0047b378f44e407839c, type: 3}
+  - {fileID: 21300000, guid: 4e3d31a16f991074f83263f40df8bed4, type: 3}
+  - {fileID: 21300000, guid: 5183cb01510141649b5921ba721711d3, type: 3}
+  - {fileID: 21300000, guid: 183dc944b194335478cb02f8b81c197f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
