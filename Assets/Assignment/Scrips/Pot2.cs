@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Pot2 : Pot
 {
+    //this function controls what sprite is displaying on the pot.
+    //the sprites are organized into a list.
     protected override void thisevent()
     {
         switch (StateTracker.pot2states)

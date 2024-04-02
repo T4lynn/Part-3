@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pot_3 : Pot
 {
+    //this function controls what sprite is displaying on the pot.
+    //the sprites are organized into a list.
    
     protected override void thisevent()
     {
